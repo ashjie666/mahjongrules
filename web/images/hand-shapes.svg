@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 360" width="820" height="360" role="img" aria-labelledby="ttlH descH">
+  <title id="ttlH">The four core winning hand shapes</title>
+  <desc id="descH">Standard hand of four sets plus a pair, seven pairs, thirteen orphans, and nine gates.</desc>
+  <rect x="0" y="0" width="820" height="360" fill="#fffdf7"/>
+  <rect x="14" y="14" width="792" height="332" rx="16" fill="none" stroke="#ddd2bd" stroke-width="2"/>
+
+  <text x="44" y="50" font-family="Georgia, serif" font-size="16" fill="#1c1a17">Every winning hand reduces to one of these shapes</text>
+
+  <!-- panel 1 -->
+  <g>
+    <rect x="36" y="70" width="360" height="118" rx="12" fill="#f6f1e6" stroke="#ddd2bd"/>
+    <text x="56" y="96" font-family="Georgia, serif" font-size="13" fill="#b03a2e">Standard hand</text>
+    <g>
+      <rect x="56" y="112" width="52" height="34" rx="6" fill="#fffdf7" stroke="#c8bba2"/><text x="82" y="134" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#1c1a17">set</text>
+      <rect x="114" y="112" width="52" height="34" rx="6" fill="#fffdf7" stroke="#c8bba2"/><text x="140" y="134" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#1c1a17">set</text>
+      <rect x="172" y="112" width="52" height="34" rx="6" fill="#fffdf7" stroke="#c8bba2"/><text x="198" y="134" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#1c1a17">set</text>
+      <rect x="230" y="112" width="52" height="34" rx="6" fill="#fffdf7" stroke="#c8bba2"/><text x="256" y="134" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#1c1a17">set</text>
+      <rect x="288" y="112" width="52" height="34" rx="6" fill="#f7e4de" stroke="#b03a2e"/><text x="314" y="134" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#b03a2e">pair</text>
+    </g>
+    <text x="56" y="170" font-family="-apple-system, Segoe UI, sans-serif" font-size="11" fill="#5c5348">14 tiles: runs, pungs or kongs, plus the eyes</text>
+  </g>
+
+  <!-- panel 2 -->
+  <g>
+    <rect x="424" y="70" width="360" height="118" rx="12" fill="#f6f1e6" stroke="#ddd2bd"/>
+    <text x="444" y="96" font-family="Georgia, serif" font-size="13" fill="#b03a2e">Seven pairs</text>
+    <g>
+      <rect x="444" y="112" width="34" height="34" rx="6" fill="#fffdf7" stroke="#c8bba2"/><text x="461" y="134" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#1c1a17">1</text>
+      <rect x="482" y="112" width="34" height="34" rx="6" fill="#fffdf7" stroke="#c8bba2"/><text x="499" y="134" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#1c1a17">2</text>
+      <rect x="520" y="112" width="34" height="34" rx="6" fill="#fffdf7" stroke="#c8bba2"/><text x="537" y="134" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#1c1a17">3</text>
+      <rect x="558" y="112" width="34" height="34" rx="6" fill="#fffdf7" stroke="#c8bba2"/><text x="575" y="134" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#1c1a17">4</text>
+      <rect x="596" y="112" width="34" height="34" rx="6" fill="#fffdf7" stroke="#c8bba2"/><text x="613" y="134" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#1c1a17">5</text>
+      <rect x="634" y="112" width="34" height="34" rx="6" fill="#fffdf7" stroke="#c8bba2"/><text x="651" y="134" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#1c1a17">6</text>
+      <rect x="672" y="112" width="34" height="34" rx="6" fill="#fffdf7" stroke="#c8bba2"/><text x="689" y="134" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#1c1a17">7</text>
+    </g>
+    <text x="444" y="170" font-family="-apple-system, Segoe UI, sans-serif" font-size="11" fill="#5c5348">14 tiles, no sets. Four of a kind counts as two pairs</text>
+  </g>
+
+  <!-- panel 3 -->
+  <g>
+    <rect x="36" y="200" width="360" height="118" rx="12" fill="#f6f1e6" stroke="#ddd2bd"/>
+    <text x="56" y="226" font-family="Georgia, serif" font-size="13" fill="#b03a2e">Thirteen orphans</text>
+    <g font-family="Georgia, serif" font-size="11" fill="#1c1a17">
+      <rect x="56" y="242" width="106" height="34" rx="6" fill="#fffdf7" stroke="#c8bba2"/><text x="109" y="263" text-anchor="middle">1 and 9, all suits</text>
+      <rect x="168" y="242" width="76" height="34" rx="6" fill="#fffdf7" stroke="#c8bba2"/><text x="206" y="263" text-anchor="middle">4 winds</text>
+      <rect x="250" y="242" width="76" height="34" rx="6" fill="#fffdf7" stroke="#c8bba2"/><text x="288" y="263" text-anchor="middle">3 dragons</text>
+      <rect x="56" y="282" width="106" height="26" rx="6" fill="#f7e4de" stroke="#b03a2e"/><text x="109" y="300" text-anchor="middle" fill="#b03a2e">plus a duplicate</text>
+    </g>
+    <text x="344" y="263" font-family="-apple-system, Segoe UI, sans-serif" font-size="11" fill="#5c5348"> = 13</text>
+  </g>
+
+  <!-- panel 4 -->
+  <g>
+    <rect x="424" y="200" width="360" height="118" rx="12" fill="#f6f1e6" stroke="#ddd2bd"/>
+    <text x="444" y="226" font-family="Georgia, serif" font-size="13" fill="#b03a2e">Nine gates</text>
+    <rect x="444" y="242" width="196" height="34" rx="6" fill="#fffdf7" stroke="#c8bba2"/>
+    <text x="542" y="264" text-anchor="middle" font-family="ui-monospace, Consolas, monospace" font-size="12" fill="#1c1a17">1112345678999</text>
+    <rect x="648" y="242" width="112" height="34" rx="6" fill="#f7e4de" stroke="#b03a2e"/>
+    <text x="704" y="264" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#b03a2e">+ any of that suit</text>
+    <text x="444" y="300" font-family="-apple-system, Segoe UI, sans-serif" font-size="11" fill="#5c5348">One suit only. The extra tile completes the fourth set</text>
+  </g>
+</svg>

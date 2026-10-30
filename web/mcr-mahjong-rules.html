@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCR Mahjong Rules: The 8-Fan Minimum</title>
+<meta name="description" content="Chinese Official mahjong uses 144 tiles, a hard 8-fan minimum and 79 scoring patterns. Learn the setup, claim rules and how a false win is penalised.">
+<link rel="canonical" href="https://mahjongrules.fun/mcr-mahjong-rules">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Mahjong Rules">
+<meta property="og:title" content="MCR Mahjong Rules: The 8-Fan Minimum">
+<meta property="og:description" content="Chinese Official mahjong uses 144 tiles, a hard 8-fan minimum and 79 scoring patterns. Learn the setup, claim rules and how a false win is penalised.">
+<meta property="og:url" content="https://mahjongrules.fun/mcr-mahjong-rules">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#b03a2e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='5' y='3' width='22' height='26' rx='4' fill='%23f6f1e6' stroke='%23b03a2e' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='6.5' fill='none' stroke='%23b03a2e' stroke-width='2.6'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("site:theme");
+      if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5158836206262469" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{
+    "inLanguage":  "en",
+    "datePublished":  "2026-10-30",
+    "description":  "Chinese Official mahjong uses 144 tiles, a hard 8-fan minimum and 79 scoring patterns. Learn the setup, claim rules and how a false win is penalised.",
+    "@type":  "Article",
+    "dateModified":  "2026-10-30",
+    "headline":  "MCR (Chinese Official) Mahjong Rules",
+    "author":  {
+                   "name":  "Mahjong Rules",
+                   "@type":  "Organization"
+               },
+    "@context":  "https://schema.org",
+    "mainEntityOfPage":  "https://mahjongrules.fun/mcr-mahjong-rules",
+    "publisher":  {
+                      "name":  "Mahjong Rules",
+                      "@type":  "Organization"
+                  }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context":  "https://schema.org",
+    "itemListElement":  [
+                            {
+                                "position":  1,
+                                "name":  "Home",
+                                "item":  "https://mahjongrules.fun/",
+                                "@type":  "ListItem"
+                            },
+                            {
+                                "position":  2,
+                                "name":  "Chinese styles",
+                                "item":  "https://mahjongrules.fun/mcr-mahjong-rules",
+                                "@type":  "ListItem"
+                            },
+                            {
+                                "position":  3,
+                                "name":  "MCR rules",
+                                "item":  "https://mahjongrules.fun/mcr-mahjong-rules",
+                                "@type":  "ListItem"
+                            }
+                        ],
+    "@type":  "BreadcrumbList"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context":  "https://schema.org",
+    "mainEntity":  [
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "It is the main reason beginners lose hands in MCR. Most first hands land between 2 and 6 fan, so the skill is choosing a pattern early rather than collecting whatever fits.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "Is 8 fan a high bar for beginners?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "No. A flower is worth one fan but is excluded from the minimum, so four flowers cannot turn a 4-fan hand into a legal win.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "Do flowers count toward the 8-fan minimum?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "It is a false win. The hand is void, points from that hand are forfeited, and a penalty is applied under competition rules.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "What happens if I call a win below 8 fan?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "Yes, from the player on your left only. Pung and kong may be claimed from any player.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "Can I chow in MCR?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "Roughly ten to fifteen minutes at a casual table, longer in competition because every win is scored carefully.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "How long does one MCR hand take?",
+                           "@type":  "Question"
+                       }
+                   ],
+    "@type":  "FAQPage"
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">&#20013;</span>
+      <span class="brand-text">
+        <span class="brand-name">Mahjong Rules</span>
+        <span class="brand-sub">Rules, scoring and strategy</span>
+      </span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <div class="nav-item">
+        <a href="/mahjong-rules">Start</a>
+        <div class="subnav">
+          <a href="/mahjong-rules">Mahjong rules<span>The full turn sequence</span></a>
+          <a href="/mahjong-tiles">Tiles &amp; setup<span>Counts, suits, the wall</span></a>
+          <a href="/mahjong-hands">Winning hands<span>Five legal shapes</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/mcr-mahjong-rules">Chinese</a>
+        <div class="subnav">
+          <a href="/mcr-mahjong-rules">MCR (Chinese Official)<span>144 tiles, 8-fan minimum</span></a>
+          <a href="/sichuan-mahjong-rules">Sichuan<span>Blood battle, no honours</span></a>
+          <a href="/hong-kong-mahjong-rules">Hong Kong<span>3-fan or 8-fan tables</span></a>
+          <a href="/taiwanese-mahjong-rules">Taiwanese<span>16 tiles, 5 tai</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/riichi-mahjong-rules">Japanese &amp; Western</a>
+        <div class="subnav">
+          <a href="/riichi-mahjong-rules">Riichi<span>Riichi, furiten, dora</span></a>
+          <a href="/american-mahjong-rules">American (NMJL)<span>Charleston and Jokers</span></a>
+          <a href="/british-mahjong-rules">British (BMJA)<span>One chow per hand</span></a>
+          <a href="/three-player-mahjong">Three-player<span>No north wind</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/mahjong-scoring">Scoring</a>
+        <div class="subnav">
+          <a href="/mahjong-scoring">Scoring basics<span>Fan, fu, tai, points</span></a>
+          <a href="/mcr-fan-list">MCR fan list<span>88 fan down to 1</span></a>
+          <a href="/riichi-yaku-list">Riichi yaku<span>12 must-know hands</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/mahjong-tile-efficiency">Strategy</a>
+        <div class="subnav">
+          <a href="/mahjong-tile-efficiency">Tile efficiency<span>Waits and out tiles</span></a>
+          <a href="/mahjong-defence">Defence<span>Suji, kabe, safe tiles</span></a>
+          <a href="/mahjong-first-game">First game<span>A full hand, turn by turn</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/mahjong-terms">Reference</a>
+        <div class="subnav">
+          <a href="/mahjong-terms">Glossary<span>Chow, pung, kong and more</span></a>
+          <a href="/mahjong-faq">FAQ<span>40 quick answers</span></a>
+          <a href="/mahjong-rule-comparison">Rules compared<span>Five axes, seven styles</span></a>
+          <a href="/mahjong-variants">Regional variants<span>Guangdong to Vietnam</span></a>
+          <a href="/mahjong-quiz">Quiz<span>20 questions</span></a>
+          <a href="/mahjong-solitaire">Solitaire vs mahjong<span>Not the same game</span></a>
+        </div>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <a class="btn-subscribe" href="#subscribe">Subscribe<span> &middot; free</span></a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle color theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"></path></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main">
+    <div class="wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/mcr-mahjong-rules">Chinese styles</a></li>
+        <li>MCR rules</li>
+      </ol>
+    </nav>
+      <div class="layout">
+        <div class="doc">
+          <article class="doc-main">
+            <header class="article-head">
+              <p class="eyebrow">Chinese styles</p>
+              <h1>MCR (Chinese Official) Mahjong Rules</h1>
+              <p class="lede">MCR is the tournament standard: four players, 144 tiles, and no win below 8 fan. It is the strictest common rule set and the easiest to score objectively.</p>
+              <p class="meta-row"><span class="badge badge--accent">Tournament</span><span>Last reviewed: <time datetime="2026-10-30">30 October 2026</time></span><span>~9 min read</span></p>
+            </header>
+<div class="keybox">
+  <h2 class="keybox-title">At a glance</h2>
+  <dl>
+    <dt>Players</dt><dd>4</dd>
+    <dt>Tiles</dt><dd>144, including eight flowers</dd>
+    <dt>Hand</dt><dd>13 tiles, 14 with the winning tile</dd>
+    <dt>Claims</dt><dd>Chow, pung and kong all allowed</dd>
+    <dt>Minimum</dt><dd>8 fan. Below that the win is void</dd>
+    <dt>Patterns</dt><dd>79 recognised fan patterns</dd>
+  </dl>
+</div>
+
+<div class="ad-slot" aria-hidden="true"></div>
+
+<div class="prose">
+<h2 id="what-makes-mcr-different">What makes MCR different</h2>
+<p>MCR, or Chinese Official mahjong, is the version formalised for competition. It uses the full 144-tile set, allows every claim, and sets a hard floor: a hand worth fewer than 8 fan is not a win, however complete it looks.</p>
+<p>That single rule reshapes the whole game. In casual mahjong you play to complete a shape. In MCR you play to complete a shape that is <em>worth enough</em> — often that means keeping a set you would otherwise break and abandoning a fast, cheap hand.</p>
+
+<h2 id="setup-and-the-shape-of-a-hand">Setup and the shape of a hand</h2>
+<p>Four players, 144 tiles including flowers, 13 tiles in hand. Play passes counter-clockwise. Each player builds a wall of 17 stacks; the dealer rolls dice to choose the break point, then deals four rounds of three tiles and takes one extra.</p>
+<p>Flowers are drawn, not held. When you draw a flower you score one fan for it and take a replacement tile from the end of the wall. Flowers never count toward the 8-fan minimum — they are bonus points, not qualification.</p>
+
+<h2 id="the-8-fan-minimum-in-practice">The 8-fan minimum in practice</h2>
+<p>Eight fan is not a high bar, but it is high enough that a beginner's first instinct — collect anything that fits — usually fails. The cheapest legal hands typically rely on one solid pattern plus small add-ons.</p>
+<table>
+  <thead>
+    <tr><th>Hand idea</th><th>Typical value</th><th>Why it works</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Full flush (one suit, no honours)</td><td>24 fan</td><td>Clears the minimum on its own</td></tr>
+    <tr><td>Half flush (one suit plus honours)</td><td>6 fan</td><td>Needs 2 more fan from anywhere</td></tr>
+    <tr><td>All triplets</td><td>6 fan</td><td>Needs 2 more fan from anywhere</td></tr>
+    <tr><td>Small three dragons</td><td>48 fan</td><td>Two dragon triplets plus a dragon pair</td></tr>
+    <tr><td>Mixed outside hand</td><td>4 fan</td><td>Usually combined with other patterns</td></tr>
+  </tbody>
+</table>
+<p>Two general rules help: pick a pattern early and build toward it, and treat every extra fan as a tiebreaker when two routes look equally fast.</p>
+
+<h2 id="how-the-fan-are-counted">How the fan are counted</h2>
+<p>MCR scoring follows six principles, applied in order:</p>
+<ol>
+  <li><strong>No double counting.</strong> The same tiles cannot score the same idea twice.</li>
+  <li><strong>Take the higher value.</strong> When two patterns describe the same shape, only the larger one counts.</li>
+  <li><strong>No splitting a pattern.</strong> A pattern is scored as a whole, not broken into pieces that fit elsewhere.</li>
+  <li><strong>One pass only.</strong> A combination is scored once, even if it could be read two ways.</li>
+  <li><strong>Flowers do not qualify.</strong> They add fan but never help reach 8.</li>
+  <li><strong>Mutually exclusive patterns.</strong> Some pairs, such as full flush and half flush, cannot both count.</li>
+</ol>
+<p>In practice most disagreements at a table are cases two and six. The full list is on the <a href="/mcr-fan-list">MCR fan table</a>.</p>
+
+<h2 id="calling-a-win-and-the-false-win-penalty">Calling a win, and the false-win penalty</h2>
+<p>You may win on a tile you draw or on a tile another player discards. Before you call it, count the fan. Calling below the minimum is a <strong>false win</strong>, and the penalty is severe: the hand is void, points already earned in that hand are forfeited, and a penalty is recorded.</p>
+<p>This is why MCR players are visibly slower at the end of a hand. They are not hesitating about whether the shape is complete; they are adding up.</p>
+
+<h2 id="claiming-and-priority">Claiming and priority</h2>
+<p>Chow may only be taken from the player to your left; pung and kong may be taken from anyone. Priority is win first, then kong, then pung, then chow. If two players can win on the same discard, the player nearest counter-clockwise to the discarder takes it. Some house rules instead make the discarder pay every winner.</p>
+
+<h2 id="dealer-rounds-and-match-length">Dealer, rounds and match length</h2>
+<p>East is the dealer and starts with 14 tiles. A dealer who wins keeps the seat and adds to the score; otherwise the deal rotates. In competition the standard match is eight hands across four rounds, though shorter formats of four hands exist.</p>
+<p>If the wall runs out with no winner, the hand is a draw. The dealer keeps the seat when the hand ends in a draw; otherwise the deal rotates.</p>
+
+<h2 id="what-this-means-for-strategy">What this means for strategy</h2>
+<p>MCR rewards planning more than speed. Three habits separate strong players from beginners:</p>
+<ul>
+  <li><strong>Commit early.</strong> Decide on a pattern in the first few turns. A hand that drifts toward three different patterns usually reaches none.</li>
+  <li><strong>Count the visible copies.</strong> With four copies of each tile, a pattern that needs three specific dragons gets much harder once two are already in the discard pile.</li>
+  <li><strong>Know when to fold.</strong> A hand that cannot reach 8 fan is worth nothing, so discarding safely becomes rational much earlier than in casual play.</li>
+</ul>
+<p>The comparison with <a href="/hong-kong-mahjong-rules">Hong Kong</a> and <a href="/riichi-mahjong-rules">riichi</a> is useful: the same core suits, very different incentives. The <a href="/mahjong-rule-comparison">five-axis comparison</a> puts them side by side.</p>
+
+<h2 id="quick-answers">Quick answers</h2>
+<details class="faq-item">
+  <summary>Is 8 fan a high bar for beginners?</summary>
+  <p>It is the main reason beginners lose hands in MCR. Most first hands land between 2 and 6 fan, so the skill is choosing a pattern early rather than collecting whatever fits.</p>
+</details>
+<details class="faq-item">
+  <summary>Do flowers count toward the 8-fan minimum?</summary>
+  <p>No. A flower is worth one fan but is excluded from the minimum, so four flowers cannot turn a 4-fan hand into a legal win.</p>
+</details>
+<details class="faq-item">
+  <summary>What happens if I call a win below 8 fan?</summary>
+  <p>It is a false win. The hand is void, points from that hand are forfeited, and a penalty is applied under competition rules.</p>
+</details>
+<details class="faq-item">
+  <summary>Can I chow in MCR?</summary>
+  <p>Yes, from the player on your left only. Pung and kong may be claimed from any player.</p>
+</details>
+<details class="faq-item">
+  <summary>How long does one MCR hand take?</summary>
+  <p>Roughly ten to fifteen minutes at a casual table, longer in competition because every win is scored carefully.</p>
+</details>
+</div>
+
+<div class="ad-slot" aria-hidden="true"></div>
+
+          </article>
+        </div>
+        <aside class="side">
+          <div class="side-card">
+            <h2>On this page</h2>
+            <ul>
+            <li><a href="#what-makes-mcr-different">What makes MCR different</a></li>
+            <li><a href="#setup-and-the-shape-of-a-hand">Setup and the shape of a hand</a></li>
+            <li><a href="#the-8-fan-minimum-in-practice">The 8-fan minimum in practice</a></li>
+            <li><a href="#how-the-fan-are-counted">How the fan are counted</a></li>
+            <li><a href="#calling-a-win-and-the-false-win-penalty">Calling a win, and the false-win penalty</a></li>
+            <li><a href="#claiming-and-priority">Claiming and priority</a></li>
+            <li><a href="#dealer-rounds-and-match-length">Dealer, rounds and match length</a></li>
+            <li><a href="#what-this-means-for-strategy">What this means for strategy</a></li>
+            <li><a href="#quick-answers">Quick answers</a></li>
+            </ul>
+          </div>
+          <div class="side-card side-cta">
+            <h3>New guides by email</h3>
+            <p>One message per launch. No spam, no drip sequence.</p>
+            <a class="btn" href="#subscribe">Subscribe</a>
+          </div>
+        <div class="side-card">
+          <h2>Related</h2>
+          <ul>
+            <li><a href="/mcr-fan-list">MCR Fan List: Every Pattern and Its Value</a></li>
+            <li><a href="/mahjong-scoring">Mahjong Scoring: Fan, Fu, Tai and Points</a></li>
+            <li><a href="/hong-kong-mahjong-rules">Hong Kong Mahjong Rules</a></li>
+            <li><a href="/mahjong-rule-comparison">Mahjong Rules Compared: Five Axes</a></li>
+          </ul>
+        </div>
+        </aside>
+      </div>
+<section class="subscribe" id="subscribe">
+  <div class="subscribe-inner">
+    <p class="eyebrow">Newsletter</p>
+    <h2>Get the next guide first</h2>
+    <p>If you are into Chinese games, leave your email and I will tell you the moment a new guide goes live. No spam, one message per launch.</p>
+    <form class="subscribe-form nl-form" action="https://getform.io/f/dypmujyqftn" method="post">
+      <label class="sr-only" for="sub-email">Email address</label>
+      <input id="sub-email" type="email" name="fi-sender-email" placeholder="you@example.com" autocomplete="email" required>
+      <button type="submit">Notify me</button>
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+    </form>
+    <p class="subscribe-note">Your address is only used for new-guide announcements. Unsubscribe any time.</p>
+    <p class="subscribe-status" role="status"></p>
+  </div>
+</section>
+    </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <p class="brand-name">Mahjong Rules</p>
+      <p class="footer-note">An independent reference for mahjong rules and strategy. Mahjong is a traditional public-domain game; this site is not affiliated with any publisher or platform.</p>
+    </div>
+    <nav class="footer-cols" aria-label="Footer">
+      <div>
+        <p class="footer-head">Learn</p>
+        <a href="/mahjong-rules">Rules</a>
+        <a href="/mahjong-tiles">Tiles</a>
+        <a href="/mahjong-hands">Winning hands</a>
+        <a href="/mahjong-first-game">First game</a>
+      </div>
+      <div>
+        <p class="footer-head">Rules</p>
+        <a href="/mcr-mahjong-rules">MCR</a>
+        <a href="/riichi-mahjong-rules">Riichi</a>
+        <a href="/sichuan-mahjong-rules">Sichuan</a>
+        <a href="/mahjong-rule-comparison">Compare</a>
+      </div>
+      <div>
+        <p class="footer-head">Site</p>
+        <a href="/about">About</a>
+        <a href="/privacy-policy">Privacy</a>
+        <a href="/terms-of-use">Terms</a>
+        <a href="/disclaimer">Disclaimer</a>
+        <a href="/dmca">DMCA</a>
+        <a href="/cookie-notice">Cookies</a>
+      </div>
+    </nav>
+  </div>
+  <div class="wrap footer-base">
+    <p>&copy; 2026 Mahjong Rules &middot; Contact: <a href="mailto:yqin1090@gmail.com">yqin1090@gmail.com</a></p>
+  </div>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mahjong Defence: Suji, Kabe and Safe Tiles</title>
+<meta name="description" content="A five-level safety scale from a tile just discarded to a fresh middle tile, plus what suji actually protects against and what it does not.">
+<link rel="canonical" href="https://mahjongrules.fun/mahjong-defence">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Mahjong Rules">
+<meta property="og:title" content="Mahjong Defence: Suji, Kabe and Safe Tiles">
+<meta property="og:description" content="A five-level safety scale from a tile just discarded to a fresh middle tile, plus what suji actually protects against and what it does not.">
+<meta property="og:url" content="https://mahjongrules.fun/mahjong-defence">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#b03a2e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='5' y='3' width='22' height='26' rx='4' fill='%23f6f1e6' stroke='%23b03a2e' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='6.5' fill='none' stroke='%23b03a2e' stroke-width='2.6'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("site:theme");
+      if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5158836206262469" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{
+    "inLanguage":  "en",
+    "datePublished":  "2026-10-30",
+    "description":  "A five-level safety scale from a tile just discarded to a fresh middle tile, plus what suji actually protects against and what it does not.",
+    "@type":  "Article",
+    "dateModified":  "2026-10-30",
+    "headline":  "Mahjong Defence: Suji, Kabe and Safe Tiles",
+    "author":  {
+                   "name":  "Mahjong Rules",
+                   "@type":  "Organization"
+               },
+    "@context":  "https://schema.org",
+    "mainEntityOfPage":  "https://mahjongrules.fun/mahjong-defence",
+    "publisher":  {
+                      "name":  "Mahjong Rules",
+                      "@type":  "Organization"
+                  }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context":  "https://schema.org",
+    "itemListElement":  [
+                            {
+                                "position":  1,
+                                "name":  "Home",
+                                "item":  "https://mahjongrules.fun/",
+                                "@type":  "ListItem"
+                            },
+                            {
+                                "position":  2,
+                                "name":  "Strategy",
+                                "item":  "https://mahjongrules.fun/mahjong-tile-efficiency",
+                                "@type":  "ListItem"
+                            },
+                            {
+                                "position":  3,
+                                "name":  "Defence",
+                                "item":  "https://mahjongrules.fun/mahjong-defence",
+                                "@type":  "ListItem"
+                            }
+                        ],
+    "@type":  "BreadcrumbList"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context":  "https://schema.org",
+    "mainEntity":  [
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "A tile another player has already discarded and nobody claimed. It is known not to complete anyone\u0027s hand at that moment.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "What is the safest tile to discard?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "No. Suji only rules out two-sided waits. Closed waits, edge waits, pair waits and double pairs all ignore it.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "Does suji make a tile safe?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "When all four copies of a tile are visible, the runs that would need it cannot exist, so tiles adjacent to those dead runs become safer.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "What is kabe?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "Often, yes, if the opponent\u0027s hand is likely larger. Compare the payment you would make against the payment you would collect.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "Should I defend even when my hand is ready?",
+                           "@type":  "Question"
+                       }
+                   ],
+    "@type":  "FAQPage"
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">&#20013;</span>
+      <span class="brand-text">
+        <span class="brand-name">Mahjong Rules</span>
+        <span class="brand-sub">Rules, scoring and strategy</span>
+      </span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <div class="nav-item">
+        <a href="/mahjong-rules">Start</a>
+        <div class="subnav">
+          <a href="/mahjong-rules">Mahjong rules<span>The full turn sequence</span></a>
+          <a href="/mahjong-tiles">Tiles &amp; setup<span>Counts, suits, the wall</span></a>
+          <a href="/mahjong-hands">Winning hands<span>Five legal shapes</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/mcr-mahjong-rules">Chinese</a>
+        <div class="subnav">
+          <a href="/mcr-mahjong-rules">MCR (Chinese Official)<span>144 tiles, 8-fan minimum</span></a>
+          <a href="/sichuan-mahjong-rules">Sichuan<span>Blood battle, no honours</span></a>
+          <a href="/hong-kong-mahjong-rules">Hong Kong<span>3-fan or 8-fan tables</span></a>
+          <a href="/taiwanese-mahjong-rules">Taiwanese<span>16 tiles, 5 tai</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/riichi-mahjong-rules">Japanese &amp; Western</a>
+        <div class="subnav">
+          <a href="/riichi-mahjong-rules">Riichi<span>Riichi, furiten, dora</span></a>
+          <a href="/american-mahjong-rules">American (NMJL)<span>Charleston and Jokers</span></a>
+          <a href="/british-mahjong-rules">British (BMJA)<span>One chow per hand</span></a>
+          <a href="/three-player-mahjong">Three-player<span>No north wind</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/mahjong-scoring">Scoring</a>
+        <div class="subnav">
+          <a href="/mahjong-scoring">Scoring basics<span>Fan, fu, tai, points</span></a>
+          <a href="/mcr-fan-list">MCR fan list<span>88 fan down to 1</span></a>
+          <a href="/riichi-yaku-list">Riichi yaku<span>12 must-know hands</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/mahjong-tile-efficiency">Strategy</a>
+        <div class="subnav">
+          <a href="/mahjong-tile-efficiency">Tile efficiency<span>Waits and out tiles</span></a>
+          <a href="/mahjong-defence">Defence<span>Suji, kabe, safe tiles</span></a>
+          <a href="/mahjong-first-game">First game<span>A full hand, turn by turn</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/mahjong-terms">Reference</a>
+        <div class="subnav">
+          <a href="/mahjong-terms">Glossary<span>Chow, pung, kong and more</span></a>
+          <a href="/mahjong-faq">FAQ<span>40 quick answers</span></a>
+          <a href="/mahjong-rule-comparison">Rules compared<span>Five axes, seven styles</span></a>
+          <a href="/mahjong-variants">Regional variants<span>Guangdong to Vietnam</span></a>
+          <a href="/mahjong-quiz">Quiz<span>20 questions</span></a>
+          <a href="/mahjong-solitaire">Solitaire vs mahjong<span>Not the same game</span></a>
+        </div>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <a class="btn-subscribe" href="#subscribe">Subscribe<span> &middot; free</span></a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle color theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"></path></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main">
+    <div class="wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/mahjong-tile-efficiency">Strategy</a></li>
+        <li>Defence</li>
+      </ol>
+    </nav>
+      <div class="layout">
+        <div class="doc">
+          <article class="doc-main">
+            <header class="article-head">
+              <p class="eyebrow">Strategy</p>
+              <h1>Mahjong Defence: Suji, Kabe and Safe Tiles</h1>
+              <p class="lede">Every point you do not give away is worth as much as a point you win. Defence is a skill with concrete rules, not a matter of instinct.</p>
+              <p class="meta-row"><span class="badge badge--accent">Safety</span><span>Last reviewed: <time datetime="2026-10-30">30 October 2026</time></span><span>~9 min read</span></p>
+            </header>
+<div class="keybox">
+  <h2 class="keybox-title">At a glance</h2>
+  <dl>
+    <dt>Core idea</dt><dd>A point not given away is worth as much as a point won</dd>
+    <dt>Safest discard</dt><dd>A tile someone has already discarded</dd>
+    <dt>Suji</dt><dd>Only protects against a two-sided wait</dd>
+    <dt>Kabe</dt><dd>Four visible copies kill the runs that need them</dd>
+    <dt>Worst discard</dt><dd>A fresh middle tile against a player who looks ready</dd>
+  </dl>
+</div>
+
+<div class="ad-slot" aria-hidden="true"></div>
+
+<div class="prose">
+<h2 id="defence-is-a-skill-with-rules">Defence is a skill with rules</h2>
+<p>Most players learn mahjong as an attacking game: build the hand, get to a wait, win. Then they play against someone who folds correctly and discover that the score does not move the way they expected. Every discard that doesn't deal in is a payment you never have to make.</p>
+<p>Defence is not a mood. It is five safety levels, two geometric tricks and one decision matrix. Learn them and you can fold without guessing.</p>
+
+<h2 id="five-safety-levels">Five safety levels</h2>
+<table>
+  <thead><tr><th>Level</th><th>Tile</th><th>Why it is safe</th></tr></thead>
+  <tbody>
+    <tr><td>L0</td><td>Fresh discard</td><td>Someone has already discarded it and nobody claimed it</td></tr>
+    <tr><td>L1</td><td>Suji tile with three visible neighbours</td><td>The run that would need it is already broken</td></tr>
+    <tr><td>L2</td><td>Honour that is not a round or seat wind</td><td>No scoring value, and hard to use in a pair</td></tr>
+    <tr><td>L3</td><td>Tile already in the river</td><td>Seen, but not proven safe — someone may be waiting on a second copy</td></tr>
+    <tr><td>L4</td><td>Fresh middle tile, 4 to 6</td><td>Fits into the widest range of waits</td></tr>
+  </tbody>
+</table>
+<p>Push your discards down this list whenever an opponent shows intent. A player who is visibly one tile away should only ever receive L0 or L1.</p>
+
+<figure class="page-figure">
+  <img src="images/safety-ladder.svg" alt="A five-step ladder of discard safety, from L0 an already discarded tile up to L4 a fresh middle tile" width="820" height="320" loading="lazy" decoding="async">
+  <figcaption>The ladder in one picture: each step up costs more risk. When an opponent looks ready, stay at L0 and L1.</figcaption>
+</figure>
+
+<h2 id="suji-what-it-protects-and-what-it-does-not">Suji: what it protects and what it does not</h2>
+<p>Suji works through furiten. A player who has discarded a 4 cannot claim on 1 or 7, because both would complete a two-sided shape that contains their own discard (2-3 waiting on 1-4, or 5-6 waiting on 4-7). So once a 4 is in a player's river, the tiles 1 and 7 are safe against that player's two-sided waits.</p>
+<p>This is a real protection, and a limited one. Suji does <strong>not</strong> protect against:</p>
+<ul>
+  <li><strong>Closed waits</strong> — 46 waiting on 5 has nothing to do with suji.</li>
+  <li><strong>Edge waits</strong> — 12 waiting on 3 is not a two-sided shape.</li>
+  <li><strong>Double pairs</strong> — a pair wait ignores runs entirely.</li>
+  <li><strong>Pair waits</strong> — the same.</li>
+</ul>
+<p>Treat suji as one level of safety, never as proof. Players who discard "suji" tiles into closed waits lose just as badly as players who discard fresh tiles.</p>
+
+<h2 id="kabe-when-four-copies-make-a-tile-dead">Kabe: when four copies make a tile dead</h2>
+<p>If all four copies of a tile are visible, no run containing it can still be in anyone's hand. That kills the closed waits that need it, and it makes the dead tile itself completely safe.</p>
+<p>The classic case: four copies of 6 are visible. Nobody can hold a 6, so the closed waits that need one — 4-6 on 5, 5-7 on 6, 6-8 on 7 — are impossible, and 5 and 7 become considerably safer. The 6 itself is the safest discard in the game: with no copy left to draw, nobody can win on it. The flip side: a 4-5 block can now only win on 3, and a 7-8 block only on 9, so those two tiles become more dangerous, not less.</p>
+<p>Kabe stacks with suji. A tile that is both a suji tile and protected by a kabe is close to L1 and can be discarded with confidence.</p>
+
+<h2 id="the-attack-and-defence-matrix">The attack-and-defence matrix</h2>
+<table>
+  <thead><tr><th>Your hand</th><th>Opponent clearly ready</th><th>Opponent possibly ready</th><th>Opponent far away</th></tr></thead>
+  <tbody>
+    <tr><td>Ready with a large hand</td><td>Defend: L0 and L1 only</td><td>Defend</td><td>Push cautiously</td></tr>
+    <tr><td>Ready with a small hand</td><td>Half attack, half defend</td><td>Lean defensive</td><td>Attack</td></tr>
+    <tr><td>Not ready</td><td>Defend, do not deal in</td><td>Defend</td><td>Build freely</td></tr>
+  </tbody>
+</table>
+<p>The row that surprises people is the first. A large hand that is ready is still not worth dealing into a larger one, because the swing between collecting and paying is often a multiple, not a fraction.</p>
+
+<h2 id="reading-intent-from-the-river">Reading intent from the river</h2>
+<p>You do not need to know what an opponent holds. You need to know whether they are close. Three signals do most of the work:</p>
+<ol>
+  <li><strong>Discard order.</strong> A player who discards honours early and middle tiles later is usually building; a player who discards middle tiles early has already committed to a narrow shape.</li>
+  <li><strong>Melds.</strong> Two claimed sets means a hand is close. Three means it is very close.</li>
+  <li><strong>Sudden caution.</strong> A player who stops discarding fresh tiles has probably reached a wait.</li>
+</ol>
+<p>None of these is certain. All of them are enough to decide between L1 and L4.</p>
+
+<h2 id="holding-safe-tiles-for-later">Holding safe tiles for later</h2>
+<p>The best defensive players keep two or three known-safe tiles in hand through the middle game, deliberately not discarding them. When an opponent reaches a wait, those tiles are the ones that keep the hand alive.</p>
+<p>This is why a hand with poor shape sometimes beats a hand with good shape: the poor hand has safe tiles to spend, and the good hand has to keep discarding dangerous ones.</p>
+
+<h2 id="defence-costs-value-and-that-is-the-point">Defence costs value, and that is the point</h2>
+<p>Folding means giving up a hand you might have won. That is the trade, and it is correct more often than beginners expect. In a four-player game, dealing into one large hand can cost more than three small wins bring in.</p>
+<p>If you want the arithmetic of wide waits to compare against the cost of folding, read <a href="/mahjong-tile-efficiency">tile efficiency</a>. The two skills are the same decision seen from opposite sides.</p>
+
+<h2 id="quick-answers">Quick answers</h2>
+<details class="faq-item">
+  <summary>What is the safest tile to discard?</summary>
+  <p>A tile another player has already discarded and nobody claimed. It is known not to complete anyone's hand at that moment.</p>
+</details>
+<details class="faq-item">
+  <summary>Does suji make a tile safe?</summary>
+  <p>No. Suji only rules out two-sided waits. Closed waits, edge waits, pair waits and double pairs all ignore it.</p>
+</details>
+<details class="faq-item">
+  <summary>What is kabe?</summary>
+  <p>When all four copies of a tile are visible, the runs that would need it cannot exist, so tiles adjacent to those dead runs become safer.</p>
+</details>
+<details class="faq-item">
+  <summary>Should I defend even when my hand is ready?</summary>
+  <p>Often, yes, if the opponent's hand is likely larger. Compare the payment you would make against the payment you would collect.</p>
+</details>
+</div>
+
+<div class="ad-slot" aria-hidden="true"></div>
+
+          </article>
+        </div>
+        <aside class="side">
+          <div class="side-card">
+            <h2>On this page</h2>
+            <ul>
+            <li><a href="#defence-is-a-skill-with-rules">Defence is a skill with rules</a></li>
+            <li><a href="#five-safety-levels">Five safety levels</a></li>
+            <li><a href="#suji-what-it-protects-and-what-it-does-not">Suji: what it protects and what it does not</a></li>
+            <li><a href="#kabe-when-four-copies-make-a-tile-dead">Kabe: when four copies make a tile dead</a></li>
+            <li><a href="#the-attack-and-defence-matrix">The attack-and-defence matrix</a></li>
+            <li><a href="#reading-intent-from-the-river">Reading intent from the river</a></li>
+            <li><a href="#holding-safe-tiles-for-later">Holding safe tiles for later</a></li>
+            <li><a href="#defence-costs-value-and-that-is-the-point">Defence costs value, and that is the point</a></li>
+            <li><a href="#quick-answers">Quick answers</a></li>
+            </ul>
+          </div>
+          <div class="side-card side-cta">
+            <h3>New guides by email</h3>
+            <p>One message per launch. No spam, no drip sequence.</p>
+            <a class="btn" href="#subscribe">Subscribe</a>
+          </div>
+        <div class="side-card">
+          <h2>Related</h2>
+          <ul>
+            <li><a href="/mahjong-tile-efficiency">Tile Efficiency: Waits and Winning Tiles</a></li>
+            <li><a href="/riichi-mahjong-rules">Riichi Mahjong Rules (Japanese)</a></li>
+            <li><a href="/mahjong-first-game">Your First Mahjong Game, Turn by Turn</a></li>
+          </ul>
+        </div>
+        </aside>
+      </div>
+<section class="subscribe" id="subscribe">
+  <div class="subscribe-inner">
+    <p class="eyebrow">Newsletter</p>
+    <h2>Get the next guide first</h2>
+    <p>If you are into Chinese games, leave your email and I will tell you the moment a new guide goes live. No spam, one message per launch.</p>
+    <form class="subscribe-form nl-form" action="https://getform.io/f/dypmujyqftn" method="post">
+      <label class="sr-only" for="sub-email">Email address</label>
+      <input id="sub-email" type="email" name="fi-sender-email" placeholder="you@example.com" autocomplete="email" required>
+      <button type="submit">Notify me</button>
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+    </form>
+    <p class="subscribe-note">Your address is only used for new-guide announcements. Unsubscribe any time.</p>
+    <p class="subscribe-status" role="status"></p>
+  </div>
+</section>
+    </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <p class="brand-name">Mahjong Rules</p>
+      <p class="footer-note">An independent reference for mahjong rules and strategy. Mahjong is a traditional public-domain game; this site is not affiliated with any publisher or platform.</p>
+    </div>
+    <nav class="footer-cols" aria-label="Footer">
+      <div>
+        <p class="footer-head">Learn</p>
+        <a href="/mahjong-rules">Rules</a>
+        <a href="/mahjong-tiles">Tiles</a>
+        <a href="/mahjong-hands">Winning hands</a>
+        <a href="/mahjong-first-game">First game</a>
+      </div>
+      <div>
+        <p class="footer-head">Rules</p>
+        <a href="/mcr-mahjong-rules">MCR</a>
+        <a href="/riichi-mahjong-rules">Riichi</a>
+        <a href="/sichuan-mahjong-rules">Sichuan</a>
+        <a href="/mahjong-rule-comparison">Compare</a>
+      </div>
+      <div>
+        <p class="footer-head">Site</p>
+        <a href="/about">About</a>
+        <a href="/privacy-policy">Privacy</a>
+        <a href="/terms-of-use">Terms</a>
+        <a href="/disclaimer">Disclaimer</a>
+        <a href="/dmca">DMCA</a>
+        <a href="/cookie-notice">Cookies</a>
+      </div>
+    </nav>
+  </div>
+  <div class="wrap footer-base">
+    <p>&copy; 2026 Mahjong Rules &middot; Contact: <a href="mailto:yqin1090@gmail.com">yqin1090@gmail.com</a></p>
+  </div>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>

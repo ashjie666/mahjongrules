@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 340" width="820" height="340" role="img" aria-labelledby="ttl desc">
+  <title id="ttl">How a 136-tile mahjong set adds up</title>
+  <desc id="desc">Three suits of 36 tiles each, 16 winds and 12 dragons make 136; eight flower tiles bring the total to 144.</desc>
+  <rect x="0" y="0" width="820" height="340" fill="#fffdf7"/>
+  <rect x="14" y="14" width="792" height="312" rx="16" fill="none" stroke="#ddd2bd" stroke-width="2"/>
+
+  <!-- three suits -->
+  <g>
+    <text x="96" y="52" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#5c5348">Characters</text>
+    <text x="96" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#a9803a">1-9 × 4 = 36</text>
+    <g>
+      <rect x="54" y="86" width="40" height="56" rx="8" fill="#fffdf7" stroke="#c8bba2"/><text x="74" y="124" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#b03a2e">1</text>
+      <rect x="100" y="86" width="40" height="56" rx="8" fill="#fffdf7" stroke="#c8bba2"/><text x="120" y="124" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#b03a2e">5</text>
+      <rect x="146" y="86" width="40" height="56" rx="8" fill="#fffdf7" stroke="#c8bba2"/><text x="166" y="124" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#b03a2e">9</text>
+    </g>
+  </g>
+
+  <g>
+    <text x="256" y="52" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#5c5348">Circles</text>
+    <text x="256" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#a9803a">1-9 × 4 = 36</text>
+    <g fill="#22384a">
+      <rect x="214" y="86" width="40" height="56" rx="8" fill="#fffdf7" stroke="#c8bba2"/><circle cx="234" cy="114" r="9" fill="none" stroke="#22384a" stroke-width="2.4"/>
+      <rect x="260" y="86" width="40" height="56" rx="8" fill="#fffdf7" stroke="#c8bba2"/><circle cx="280" cy="102" r="6" fill="#22384a"/><circle cx="280" cy="126" r="6" fill="#22384a"/>
+      <rect x="306" y="86" width="40" height="56" rx="8" fill="#fffdf7" stroke="#c8bba2"/><circle cx="318" cy="100" r="5" fill="#22384a"/><circle cx="330" cy="114" r="5" fill="#22384a"/><circle cx="318" cy="128" r="5" fill="#22384a"/>
+    </g>
+  </g>
+
+  <g>
+    <text x="416" y="52" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#5c5348">Bamboo</text>
+    <text x="416" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#a9803a">1-9 × 4 = 36</text>
+    <g stroke="#2f6b4f" stroke-width="3">
+      <rect x="374" y="86" width="40" height="56" rx="8" fill="#fffdf7" stroke="#c8bba2" stroke-width="1.2"/><line x1="394" y1="100" x2="394" y2="128"/>
+      <rect x="420" y="86" width="40" height="56" rx="8" fill="#fffdf7" stroke="#c8bba2" stroke-width="1.2"/><line x1="432" y1="98" x2="432" y2="130"/><line x1="448" y1="98" x2="448" y2="130"/>
+      <rect x="466" y="86" width="40" height="56" rx="8" fill="#fffdf7" stroke="#c8bba2" stroke-width="1.2"/><line x1="478" y1="98" x2="478" y2="130"/><line x1="486" y1="98" x2="486" y2="130"/><line x1="494" y1="98" x2="494" y2="130"/>
+    </g>
+  </g>
+
+  <!-- honours -->
+  <g>
+    <text x="600" y="52" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#5c5348">Winds &amp; dragons</text>
+    <text x="600" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#a9803a">16 + 12 = 28</text>
+    <g font-family="Georgia, serif" font-size="13" text-anchor="middle">
+      <rect x="540" y="86" width="36" height="50" rx="7" fill="#fffdf7" stroke="#c8bba2"/><text x="558" y="117" fill="#22384a">E</text>
+      <rect x="580" y="86" width="36" height="50" rx="7" fill="#fffdf7" stroke="#c8bba2"/><text x="598" y="117" fill="#22384a">S</text>
+      <rect x="620" y="86" width="36" height="50" rx="7" fill="#fffdf7" stroke="#c8bba2"/><text x="638" y="117" fill="#22384a">W</text>
+      <rect x="660" y="86" width="36" height="50" rx="7" fill="#fffdf7" stroke="#c8bba2"/><text x="678" y="117" fill="#22384a">N</text>
+    </g>
+    <g font-family="Georgia, serif" font-size="13" text-anchor="middle">
+      <rect x="558" y="146" width="36" height="50" rx="7" fill="#fffdf7" stroke="#c8bba2"/><text x="576" y="177" fill="#b03a2e">R</text>
+      <rect x="598" y="146" width="36" height="50" rx="7" fill="#fffdf7" stroke="#c8bba2"/><text x="616" y="177" fill="#2f6b4f">G</text>
+      <rect x="638" y="146" width="36" height="50" rx="7" fill="#fffdf7" stroke="#c8bba2"/><text x="656" y="177" fill="#1c1a17">W</text>
+    </g>
+  </g>
+
+  <!-- formula -->
+  <g font-family="Georgia, serif">
+    <line x1="56" y1="216" x2="764" y2="216" stroke="#ddd2bd" stroke-width="1.5"/>
+    <text x="410" y="248" text-anchor="middle" font-size="16" fill="#1c1a17">36 + 36 + 36 + 16 + 12 = 136</text>
+    <text x="410" y="276" text-anchor="middle" font-size="15" fill="#2f6b4f">+ 8 flower tiles = 144</text>
+    <text x="410" y="304" text-anchor="middle" font-size="13" fill="#5c5348">+ 8 Jokers in the American set = 152</text>
+  </g>
+</svg>

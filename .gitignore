@@ -1,0 +1,9 @@
+# 部署包与临时产物
+*.zip
+_research/.wrangler/
+_research/_*.ps1
+_research/_probe.mjs
+
+# 系统文件
+Thumbs.db
+desktop.ini

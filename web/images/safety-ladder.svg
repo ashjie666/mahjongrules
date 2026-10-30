@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 320" width="820" height="320" role="img" aria-labelledby="ttlS descS">
+  <title id="ttlS">The five safety levels for a discard</title>
+  <desc id="descS">A five step ladder from L0, a tile already discarded and unclaimed, up to L4, a fresh middle tile, which is the most dangerous discard.</desc>
+  <rect x="0" y="0" width="820" height="320" fill="#fffdf7"/>
+  <rect x="14" y="14" width="792" height="292" rx="16" fill="none" stroke="#ddd2bd" stroke-width="2"/>
+
+  <text x="44" y="48" font-family="Georgia, serif" font-size="16" fill="#1c1a17">The safety ladder: discard from L0 upwards</text>
+  <text x="44" y="68" font-family="-apple-system, Segoe UI, sans-serif" font-size="11" fill="#5c5348">Against a player who looks ready, never skip past L1.</text>
+
+  <text x="60" y="98" font-family="-apple-system, Segoe UI, sans-serif" font-size="10" fill="#2f6b4f" letter-spacing="1">SAFER</text>
+  <text x="772" y="98" text-anchor="end" font-family="-apple-system, Segoe UI, sans-serif" font-size="10" fill="#b03a2e" letter-spacing="1">MORE DANGEROUS</text>
+  <line x1="106" y1="95" x2="700" y2="95" stroke="#ddd2bd" stroke-width="1"/>
+
+  <g>
+    <rect x="60" y="218" width="136" height="34" rx="6" fill="#2f6b4f"/>
+    <rect x="204" y="194" width="136" height="58" rx="6" fill="#5d7d4c"/>
+    <rect x="348" y="170" width="136" height="82" rx="6" fill="#a9803a"/>
+    <rect x="492" y="146" width="136" height="106" rx="6" fill="#a65a35"/>
+    <rect x="636" y="122" width="136" height="130" rx="6" fill="#b03a2e"/>
+  </g>
+
+  <g font-family="-apple-system, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#fffdf7" text-anchor="middle">
+    <text x="128" y="241">L0</text>
+    <text x="272" y="241">L1</text>
+    <text x="416" y="241">L2</text>
+    <text x="560" y="241">L3</text>
+    <text x="704" y="241">L4</text>
+  </g>
+
+  <g font-family="-apple-system, Segoe UI, sans-serif" font-size="11" fill="#5c5348" text-anchor="middle">
+    <text x="128" y="272">Already discarded</text>
+    <text x="128" y="287" font-size="10" fill="#8a8072">and nobody claimed</text>
+    <text x="272" y="272">Suji tile</text>
+    <text x="272" y="287" font-size="10" fill="#8a8072">with kabe support</text>
+    <text x="416" y="272">Honour</text>
+    <text x="416" y="287" font-size="10" fill="#8a8072">with no value</text>
+    <text x="560" y="272">River tile</text>
+    <text x="560" y="287" font-size="10" fill="#8a8072">not proven safe</text>
+    <text x="704" y="272">Fresh middle</text>
+    <text x="704" y="287" font-size="10" fill="#8a8072">4, 5 or 6</text>
+  </g>
+</svg>

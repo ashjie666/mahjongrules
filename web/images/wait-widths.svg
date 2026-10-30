@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 340" width="820" height="340" role="img" aria-labelledby="ttlW descW">
+  <title id="ttlW">Out tiles by wait shape</title>
+  <desc id="descW">Bar chart of the seven common wait shapes: three-sided 11 out tiles, two-sided 8, extendable 6, double pair 4, closed 4, edge 4 and pair wait 3.</desc>
+  <rect x="0" y="0" width="820" height="340" fill="#fffdf7"/>
+  <rect x="14" y="14" width="792" height="312" rx="16" fill="none" stroke="#ddd2bd" stroke-width="2"/>
+
+  <text x="44" y="50" font-family="Georgia, serif" font-size="16" fill="#1c1a17">Tiles that complete the wait</text>
+  <text x="44" y="70" font-family="Georgia, serif" font-size="12" fill="#5c5348">Four copies of every tile exist; nothing visible is subtracted here.</text>
+
+  <g font-family="Georgia, serif" font-size="13" fill="#1c1a17">
+    <text x="44" y="106">Three-sided</text>
+    <text x="44" y="142">Two-sided</text>
+    <text x="44" y="178">Extendable pair</text>
+    <text x="44" y="214">Double pair</text>
+    <text x="44" y="250">Closed wait</text>
+    <text x="44" y="286">Edge wait</text>
+    <text x="44" y="322">Pair wait</text>
+  </g>
+
+  <g>
+    <rect x="180" y="88" width="440" height="22" rx="4" fill="#b03a2e"/>
+    <rect x="180" y="124" width="320" height="22" rx="4" fill="#b03a2e"/>
+    <rect x="180" y="160" width="240" height="22" rx="4" fill="#a9803a"/>
+    <rect x="180" y="196" width="160" height="22" rx="4" fill="#2f6b4f"/>
+    <rect x="180" y="232" width="160" height="22" rx="4" fill="#2f6b4f"/>
+    <rect x="180" y="268" width="160" height="22" rx="4" fill="#2f6b4f"/>
+    <rect x="180" y="304" width="120" height="22" rx="4" fill="#22384a"/>
+  </g>
+
+  <g font-family="Georgia, serif" font-size="12" fill="#fffdf7" text-anchor="end">
+    <text x="612" y="104">11</text>
+    <text x="492" y="140">8</text>
+    <text x="412" y="176">6</text>
+    <text x="332" y="212">4</text>
+    <text x="332" y="248">4</text>
+    <text x="332" y="284">4</text>
+    <text x="292" y="320">3</text>
+  </g>
+
+  <text x="640" y="140" font-family="-apple-system, Segoe UI, sans-serif" font-size="11" fill="#5c5348">the default target</text>
+  <text x="640" y="56" font-family="-apple-system, Segoe UI, sans-serif" font-size="11" fill="#5c5348">target shape</text>
+</svg>

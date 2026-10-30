@@ -1,0 +1,9 @@
+# Cloudflare Pages redirects.
+# Docs: https://developers.cloudflare.com/pages/configuration/redirects/
+#
+# Static pages are served from flat files, so no redirect rules are needed here.
+# Cloudflare Pages automatically 308-redirects /page.html to /page, which is why
+# every internal link, canonical URL and sitemap entry must use clean URLs.
+#
+# Add explicit 301s here only when a page is renamed or removed, e.g.:
+# /old-slug  /new-slug  301

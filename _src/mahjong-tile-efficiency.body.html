@@ -1,0 +1,83 @@
+<div class="keybox">
+  <h2 class="keybox-title">At a glance</h2>
+  <dl>
+    <dt>The measure</dt><dd>Out tiles, not number of waits</dd>
+    <dt>Best shape</dt><dd>Two-sided wait on 8 tiles</dd>
+    <dt>Worst common shape</dt><dd>Pair wait on 3 tiles</dd>
+    <dt>Counting rule</dt><dd>Four copies of each tile exist; subtract what is visible</dd>
+    <dt>Priority</dt><dd>Wider wait first, pattern value second</dd>
+  </dl>
+</div>
+
+<div class="ad-slot" aria-hidden="true"></div>
+
+<div class="prose">
+<h2>Tile efficiency is arithmetic, not style</h2>
+<p>Two hands can both be one tile from winning and still not be equal. One waits on a shape that eight tiles complete; the other on a shape that three tiles complete. Over enough hands, the wider wait wins more often, and that difference is large enough to decide a session.</p>
+<p>The unit is the <strong>out tile</strong>: a copy of a tile that would complete your hand. Four copies of every tile exist, so a wait's width is four minus the copies you can already see in your hand, in the discards, or in the melds.</p>
+
+<h2>Seven wait shapes, ranked</h2>
+<table>
+  <thead><tr><th>Shape</th><th>What it looks like</th><th>Out tiles</th><th>Example</th></tr></thead>
+  <tbody>
+    <tr><td>Three-sided</td><td>A broken run that completes three ways</td><td>11</td><td>456 plus 345 waits on 2, 5 and 6</td></tr>
+    <tr><td>Two-sided</td><td>Two tiles at the edge of a run</td><td>8</td><td>45 waits on 3 and 6</td></tr>
+    <tr><td>Extendable pair</td><td>A near-run that can upgrade</td><td>6</td><td>46 plus a lone tile; draw 5 to widen</td></tr>
+    <tr><td>Double pair</td><td>Two pairs, either completes</td><td>4</td><td>East pair plus white pair</td></tr>
+    <tr><td>Closed</td><td>Gap in the middle of a run</td><td>4</td><td>46 waits on 5</td></tr>
+    <tr><td>Edge</td><td>12 or 89 at the boundary</td><td>4</td><td>12 waits on 3</td></tr>
+    <tr><td>Pair wait</td><td>Only the pair tile is missing</td><td>3</td><td>Three complete sets plus one tile</td></tr>
+  </tbody>
+</table>
+<p>Those counts assume nothing is visible. In a real hand, subtract every copy already in your own hand, in any river, or in any meld. A two-sided wait on 3 and 6 drops from 8 to 6 if you hold two 3s yourself.</p>
+
+<figure class="page-figure">
+  <img src="images/wait-widths.svg" alt="Bar chart comparing out tiles for seven wait shapes: three-sided 11, two-sided 8, extendable pair 6, double pair 4, closed 4, edge 4 and pair wait 3" width="820" height="340" loading="lazy" decoding="async">
+  <figcaption>Wait shapes ranked by out tiles before any visible copies are subtracted. The two-sided wait is the shape you can actually build.</figcaption>
+</figure>
+
+<h2>Why the two-sided wait is the default target</h2>
+<p>It is not the widest shape — the three-sided wait beats it — but it is the widest shape you can reliably build. Three-sided waits come from specific broken shapes and are hard to plan for. A two-sided wait comes from any two adjacent middle tiles, which is the most common useful block in the game.</p>
+<p>The practical consequence: when you have a choice between keeping 45 and keeping 46, keep 45. The closed wait on 5 is worth half as much.</p>
+
+<h2>When to upgrade a wait instead of taking it</h2>
+<p>A pair wait is legal and safe, and sometimes it is correct. But if the hand can be upgraded to a two-sided wait with one draw, the upgrade is usually worth the risk of one more turn.</p>
+<p>Consider a hand of four complete sets and one lone tile. The immediate wait is the pair — three out tiles. Now step back one turn: three complete sets, a pair and a closed 4-6 block. That block waits on 5, four out tiles, but drawing a 3 or a 7 turns it into a two-sided block worth eight. Double the width for the cost of one turn.</p>
+<p>The exception is late in the hand, or when an opponent is visibly close to winning. At that point the value of being one tile away exceeds the value of a wider wait you may never reach.</p>
+
+<h2>The rule about breaking a finished set</h2>
+<p>Breaking a complete set to chase a wider wait is almost always wrong. You trade a guaranteed set for a chance at a better one, and you lose the turn you spent doing it.</p>
+<p>The one case where it is defensible: a complete set made of tiles that are nearly dead, where the set itself contributes little pattern value and the rest of the hand needs the space. Even then, count the out tiles before and after. If the number does not improve by at least half, do not do it.</p>
+
+<h2>Counting in practice: a three-step check</h2>
+<ol>
+  <li><strong>List your waits.</strong> Name every tile that completes the hand, not just the one you are hoping for.</li>
+  <li><strong>Subtract visible copies.</strong> Your hand, all four rivers, all melds. Include the tiles you have discarded this hand.</li>
+  <li><strong>Compare to the alternative.</strong> A discard that changes your wait is only worth it if the new total is higher.</li>
+</ol>
+<p>Doing this takes about ten seconds once you are used to it, and it is the difference between a player who guesses and a player who knows.</p>
+
+<h2>Efficiency is not the whole game</h2>
+<p>Wider waits win more hands, but they do not win bigger ones. In riichi, a narrow wait on a hand with three yaku can beat a wide wait on a hand with none. In Chinese Official, a wide wait that cannot reach 8 fan is worthless.</p>
+<p>The correct order of operations is: check that the hand can be legally declared, then maximise the wait, then maximise the value. Players who reverse the first two steps spend a lot of time one tile from a hand they were never allowed to declare.</p>
+
+<h2>Quick answers</h2>
+<details class="faq-item">
+  <summary>Which wait wins on the most tiles?</summary>
+  <p>A three-sided wait, at up to 11 out tiles. It is rare, because it requires a specific broken shape rather than two adjacent tiles.</p>
+</details>
+<details class="faq-item">
+  <summary>Should I always prefer a two-sided wait?</summary>
+  <p>Usually, yes. It is worth 8 out tiles before anything is visible, twice the closed wait's 4.</p>
+</details>
+<details class="faq-item">
+  <summary>Is it ever right to break a complete set?</summary>
+  <p>Rarely. Only when the set's tiles are nearly dead and the wait improves substantially. Count before and after, and require a clear gain.</p>
+</details>
+<details class="faq-item">
+  <summary>Does a wider wait always mean a better hand?</summary>
+  <p>No. The hand must be legally declarable first. In riichi it needs a yaku; in Chinese Official it needs 8 fan. A wide wait on an illegal hand is worth nothing.</p>
+</details>
+</div>
+
+<div class="ad-slot" aria-hidden="true"></div>

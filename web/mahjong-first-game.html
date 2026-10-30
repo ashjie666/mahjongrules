@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your First Mahjong Game, Turn by Turn</title>
+<meta name="description" content="A complete 13-tile hand played from the deal to the final discard, including the mistake that turns a winning hand into a false win.">
+<link rel="canonical" href="https://mahjongrules.fun/mahjong-first-game">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Mahjong Rules">
+<meta property="og:title" content="Your First Mahjong Game, Turn by Turn">
+<meta property="og:description" content="A complete 13-tile hand played from the deal to the final discard, including the mistake that turns a winning hand into a false win.">
+<meta property="og:url" content="https://mahjongrules.fun/mahjong-first-game">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#b03a2e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='5' y='3' width='22' height='26' rx='4' fill='%23f6f1e6' stroke='%23b03a2e' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='6.5' fill='none' stroke='%23b03a2e' stroke-width='2.6'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("site:theme");
+      if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5158836206262469" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{
+    "inLanguage":  "en",
+    "datePublished":  "2026-10-30",
+    "description":  "A complete 13-tile hand played from the deal to the final discard, including the mistake that turns a winning hand into a false win.",
+    "@type":  "Article",
+    "dateModified":  "2026-10-30",
+    "headline":  "Your First Mahjong Game, Turn by Turn",
+    "author":  {
+                   "name":  "Mahjong Rules",
+                   "@type":  "Organization"
+               },
+    "@context":  "https://schema.org",
+    "mainEntityOfPage":  "https://mahjongrules.fun/mahjong-first-game",
+    "publisher":  {
+                      "name":  "Mahjong Rules",
+                      "@type":  "Organization"
+                  }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context":  "https://schema.org",
+    "itemListElement":  [
+                            {
+                                "position":  1,
+                                "name":  "Home",
+                                "item":  "https://mahjongrules.fun/",
+                                "@type":  "ListItem"
+                            },
+                            {
+                                "position":  2,
+                                "name":  "Strategy",
+                                "item":  "https://mahjongrules.fun/mahjong-tile-efficiency",
+                                "@type":  "ListItem"
+                            },
+                            {
+                                "position":  3,
+                                "name":  "First game",
+                                "item":  "https://mahjongrules.fun/mahjong-first-game",
+                                "@type":  "ListItem"
+                            }
+                        ],
+    "@type":  "BreadcrumbList"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context":  "https://schema.org",
+    "mainEntity":  [
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "Usually not, if the block you would claim is your widest one. Claim the set that completes value, not the set that is easiest to finish.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "Should I claim the first chow offered?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "Because it scored below the style\u0027s minimum. In Chinese Official that is 8 fan; in riichi the hand needs at least one yaku.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "Why did a complete hand get rejected?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "Yes, when an opponent is close to winning. The cost of dealing in is usually larger than the cost of a narrower wait.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "Is it worth narrowing a wait for a safer discard?",
+                           "@type":  "Question"
+                       },
+                       {
+                           "acceptedAnswer":  {
+                                                  "text":  "Because every opponent pays instead of just the discarder. The value per player can be lower and the total still higher.",
+                                                  "@type":  "Answer"
+                                              },
+                           "name":  "Why do self-drawn wins feel bigger?",
+                           "@type":  "Question"
+                       }
+                   ],
+    "@type":  "FAQPage"
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">&#20013;</span>
+      <span class="brand-text">
+        <span class="brand-name">Mahjong Rules</span>
+        <span class="brand-sub">Rules, scoring and strategy</span>
+      </span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <div class="nav-item">
+        <a href="/mahjong-rules">Start</a>
+        <div class="subnav">
+          <a href="/mahjong-rules">Mahjong rules<span>The full turn sequence</span></a>
+          <a href="/mahjong-tiles">Tiles &amp; setup<span>Counts, suits, the wall</span></a>
+          <a href="/mahjong-hands">Winning hands<span>Five legal shapes</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/mcr-mahjong-rules">Chinese</a>
+        <div class="subnav">
+          <a href="/mcr-mahjong-rules">MCR (Chinese Official)<span>144 tiles, 8-fan minimum</span></a>
+          <a href="/sichuan-mahjong-rules">Sichuan<span>Blood battle, no honours</span></a>
+          <a href="/hong-kong-mahjong-rules">Hong Kong<span>3-fan or 8-fan tables</span></a>
+          <a href="/taiwanese-mahjong-rules">Taiwanese<span>16 tiles, 5 tai</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/riichi-mahjong-rules">Japanese &amp; Western</a>
+        <div class="subnav">
+          <a href="/riichi-mahjong-rules">Riichi<span>Riichi, furiten, dora</span></a>
+          <a href="/american-mahjong-rules">American (NMJL)<span>Charleston and Jokers</span></a>
+          <a href="/british-mahjong-rules">British (BMJA)<span>One chow per hand</span></a>
+          <a href="/three-player-mahjong">Three-player<span>No north wind</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/mahjong-scoring">Scoring</a>
+        <div class="subnav">
+          <a href="/mahjong-scoring">Scoring basics<span>Fan, fu, tai, points</span></a>
+          <a href="/mcr-fan-list">MCR fan list<span>88 fan down to 1</span></a>
+          <a href="/riichi-yaku-list">Riichi yaku<span>12 must-know hands</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/mahjong-tile-efficiency">Strategy</a>
+        <div class="subnav">
+          <a href="/mahjong-tile-efficiency">Tile efficiency<span>Waits and out tiles</span></a>
+          <a href="/mahjong-defence">Defence<span>Suji, kabe, safe tiles</span></a>
+          <a href="/mahjong-first-game">First game<span>A full hand, turn by turn</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/mahjong-terms">Reference</a>
+        <div class="subnav">
+          <a href="/mahjong-terms">Glossary<span>Chow, pung, kong and more</span></a>
+          <a href="/mahjong-faq">FAQ<span>40 quick answers</span></a>
+          <a href="/mahjong-rule-comparison">Rules compared<span>Five axes, seven styles</span></a>
+          <a href="/mahjong-variants">Regional variants<span>Guangdong to Vietnam</span></a>
+          <a href="/mahjong-quiz">Quiz<span>20 questions</span></a>
+          <a href="/mahjong-solitaire">Solitaire vs mahjong<span>Not the same game</span></a>
+        </div>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <a class="btn-subscribe" href="#subscribe">Subscribe<span> &middot; free</span></a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle color theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"></path></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main">
+    <div class="wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/mahjong-tile-efficiency">Strategy</a></li>
+        <li>First game</li>
+      </ol>
+    </nav>
+      <div class="layout">
+        <div class="doc">
+          <article class="doc-main">
+            <header class="article-head">
+              <p class="eyebrow">Strategy</p>
+              <h1>Your First Mahjong Game, Turn by Turn</h1>
+              <p class="lede">Rules are easier to absorb in sequence. This is one full hand, from shuffling the wall to scoring the result, with the reasoning at every decision.</p>
+              <p class="meta-row"><span class="badge badge--accent">Walkthrough</span><span>Last reviewed: <time datetime="2026-10-30">30 October 2026</time></span><span>~10 min read</span></p>
+            </header>
+<div class="keybox">
+  <h2 class="keybox-title">At a glance</h2>
+  <dl>
+    <dt>Style</dt><dd>Chinese Official (MCR), four players</dd>
+    <dt>Your seat</dt><dd>West, 13 tiles in hand</dd>
+    <dt>Key moment</dt><dd>You reach a wait, then discover the hand is short of 8 fan</dd>
+    <dt>Lesson</dt><dd>A complete shape is not a legal win</dd>
+  </dl>
+</div>
+
+<div class="ad-slot" aria-hidden="true"></div>
+
+<div class="prose">
+<h2 id="before-the-first-tile">Before the first tile</h2>
+<p>Rules are easier to absorb in order than as a list. This is one hand, played from the wall to the final payment, with the decision at each step spelled out. It uses Chinese Official rules because that set is the strictest: if you can follow a hand here, every other style is a relaxation of it.</p>
+<p>Four players. Dealer sits east; you sit west with 13 tiles. The wall is 136 tiles, no flowers. Base stake agreed at the table before the deal.</p>
+
+<h2 id="step-1-build-the-wall">Step 1: build the wall</h2>
+<p>Every player stacks 17 pairs of tiles face down into a square. The dealer throws two dice; the total decides which wall to break and how many stacks in. Tiles are dealt in four rounds of three to each player, then one final tile each; the dealer takes the fourteenth and plays first.</p>
+<p>Nothing in this step involves strategy. What matters is that the wall is a fixed resource: every tile you draw comes from it, and every tile your opponents draw comes from the same place.</p>
+
+<h2 id="step-2-read-the-deal">Step 2: read the deal</h2>
+<p>Your starting hand:</p>
+<p class="hand"><strong>2 3 3 characters &middot; 5 6 7 circles &middot; 8 8 9 bamboo &middot; east east &middot; white white</strong></p>
+<p>Before discarding anything, count what you have:</p>
+<ul>
+  <li><strong>Two pairs</strong> — east and white, either of which can become a set or stay as the pair.</li>
+  <li><strong>One near-run</strong> — 2 3 characters, one tile from a run.</li>
+  <li><strong>One complete run</strong> — 5 6 7 circles.</li>
+  <li><strong>One awkward pair</strong> — 8 8 bamboo with a 9 beside it, which is close to a run but not close enough.</li>
+</ul>
+<p>That is a good start: one completed set, three blocks that can become sets, and two pairs to work with.</p>
+
+<h2 id="step-3-the-first-three-discards">Step 3: the first three discards</h2>
+<p>The player to your left discards a 4 characters. You could chow it with your 2-3, but you decline. The 2-3 block waits on two different tiles and can still widen; claiming it locks one set early and spends your chow on the least valuable option.</p>
+<p>The player opposite discards a white dragon. You <strong>claim it</strong>. Three white dragons is a completed set worth fan, and it removes a pair that was competing with your east pair for the pair slot. Your hand drops to 10 tiles plus the meld.</p>
+<p>The player to your right discards a 9 bamboo. You decline again. It connects with nothing: your 8-8 pair wants a third 8, and a lone 9 gives you no new block.</p>
+<p>Three decisions, one claim. The pattern is: claim when it adds value, decline when it narrows your shape.</p>
+
+<h2 id="step-4-the-middle-game">Step 4: the middle game</h2>
+<p>You draw a 1 characters and the 2-3 becomes a complete 1-2-3 run. The hand now reads:</p>
+<ul>
+  <li>1-2-3 characters (complete)</li>
+  <li>5-6-7 circles (complete)</li>
+  <li>White dragon pung (complete, claimed)</li>
+  <li>8-8-9 bamboo and a pair of east winds</li>
+</ul>
+<p>Two sets plus the meld, one near-run, and a pair. You are one set and one pair away from a win, with a clean route: the 8-9 bamboo needs a 7, and the east pair can become the pair or become a pung if a third east appears.</p>
+<p>This is the point where most beginners start discarding whatever is not working. Resist that. The 8-8-9 is a real block; every other tile in hand is part of a set.</p>
+
+<h2 id="step-5-reaching-a-wait">Step 5: reaching a wait</h2>
+<p>You draw a third east. Now the hand is complete in shape:</p>
+<ul>
+  <li>1-2-3 characters</li>
+  <li>5-6-7 circles</li>
+  <li>White dragon pung</li>
+  <li>East wind pung</li>
+  <li>8-8 bamboo as the pair</li>
+</ul>
+<p>Before that draw the hand held two pairs — east and 8 bamboo — a double-pung wait on four out tiles. The third east resolved it into four sets and a pair. And then you check the value.</p>
+
+<h2 id="step-6-the-check-that-saves-you">Step 6: the check that saves you</h2>
+<p>Count the fan. No honours? No — you have two honour pungs. All pungs? No, you have two runs. Half flush? No, three suits. Terminal pung? The 1 in 1-2-3 is a run tile, not a pung.</p>
+<p>The hand scores <strong>4 fan</strong> — below the Chinese Official minimum of 8. Declaring it would be a false win, which carries a penalty in tournament play.</p>
+<p>This is the lesson the whole walkthrough exists to teach: a hand can be complete, have a wide wait, and still be illegal. Shape and value are two separate checks, and the second one comes first.</p>
+
+<h2 id="step-7-adjusting-instead-of-declaring">Step 7: adjusting instead of declaring</h2>
+<p>With the hand at 4 fan, you have two choices: keep building toward a pattern that adds value, or continue as though you were waiting and hope to score. The correct move is to keep building — and to stop discarding dangerous tiles while you do it.</p>
+<p>The river shows two 7 bamboo and one 9 bamboo already discarded. The 9 is therefore the safer of the two to discard, which means the hand becomes a single wait on 7. Narrower, but the 9 does not come back to hurt you.</p>
+<p>That trade — a narrower wait for a safer discard — is the whole of defensive play in one decision.</p>
+
+<h2 id="step-8-the-payment">Step 8: the payment</h2>
+<p>The player opposite discards the 7 bamboo you were waiting on. You win on a discard, so that player pays the full value alone. The other two pay nothing.</p>
+<p>Had you won on a self-drawn tile instead, all three would have paid. That difference is why self-draw is worth chasing when the hand is close: not more points per player, but three payers instead of one.</p>
+
+<h2 id="step-9-what-to-review">Step 9: what to review</h2>
+<p>Three questions after every hand, win or lose:</p>
+<ol>
+  <li><strong>How many out tiles did I have?</strong> If you cannot answer, you were guessing.</li>
+  <li><strong>How dangerous was my last discard?</strong> Name the level, not the feeling.</li>
+  <li><strong>Could I legally declare?</strong> Check the fan before the wait, every time.</li>
+</ol>
+<p>Answer those three and the next hand is easier than this one.</p>
+
+<h2 id="quick-answers">Quick answers</h2>
+<details class="faq-item">
+  <summary>Should I claim the first chow offered?</summary>
+  <p>Usually not, if the block you would claim is your widest one. Claim the set that completes value, not the set that is easiest to finish.</p>
+</details>
+<details class="faq-item">
+  <summary>Why did a complete hand get rejected?</summary>
+  <p>Because it scored below the style's minimum. In Chinese Official that is 8 fan; in riichi the hand needs at least one yaku.</p>
+</details>
+<details class="faq-item">
+  <summary>Is it worth narrowing a wait for a safer discard?</summary>
+  <p>Yes, when an opponent is close to winning. The cost of dealing in is usually larger than the cost of a narrower wait.</p>
+</details>
+<details class="faq-item">
+  <summary>Why do self-drawn wins feel bigger?</summary>
+  <p>Because every opponent pays instead of just the discarder. The value per player can be lower and the total still higher.</p>
+</details>
+</div>
+
+<div class="ad-slot" aria-hidden="true"></div>
+
+          </article>
+        </div>
+        <aside class="side">
+          <div class="side-card">
+            <h2>On this page</h2>
+            <ul>
+            <li><a href="#before-the-first-tile">Before the first tile</a></li>
+            <li><a href="#step-1-build-the-wall">Step 1: build the wall</a></li>
+            <li><a href="#step-2-read-the-deal">Step 2: read the deal</a></li>
+            <li><a href="#step-3-the-first-three-discards">Step 3: the first three discards</a></li>
+            <li><a href="#step-4-the-middle-game">Step 4: the middle game</a></li>
+            <li><a href="#step-5-reaching-a-wait">Step 5: reaching a wait</a></li>
+            <li><a href="#step-6-the-check-that-saves-you">Step 6: the check that saves you</a></li>
+            <li><a href="#step-7-adjusting-instead-of-declaring">Step 7: adjusting instead of declaring</a></li>
+            <li><a href="#step-8-the-payment">Step 8: the payment</a></li>
+            <li><a href="#step-9-what-to-review">Step 9: what to review</a></li>
+            <li><a href="#quick-answers">Quick answers</a></li>
+            </ul>
+          </div>
+          <div class="side-card side-cta">
+            <h3>New guides by email</h3>
+            <p>One message per launch. No spam, no drip sequence.</p>
+            <a class="btn" href="#subscribe">Subscribe</a>
+          </div>
+        <div class="side-card">
+          <h2>Related</h2>
+          <ul>
+            <li><a href="/mahjong-rules">mahjong-rules</a></li>
+            <li><a href="/mahjong-tile-efficiency">Tile Efficiency: Waits and Winning Tiles</a></li>
+            <li><a href="/mahjong-defence">Mahjong Defence: Suji, Kabe and Safe Tiles</a></li>
+          </ul>
+        </div>
+        </aside>
+      </div>
+<section class="subscribe" id="subscribe">
+  <div class="subscribe-inner">
+    <p class="eyebrow">Newsletter</p>
+    <h2>Get the next guide first</h2>
+    <p>If you are into Chinese games, leave your email and I will tell you the moment a new guide goes live. No spam, one message per launch.</p>
+    <form class="subscribe-form nl-form" action="https://getform.io/f/dypmujyqftn" method="post">
+      <label class="sr-only" for="sub-email">Email address</label>
+      <input id="sub-email" type="email" name="fi-sender-email" placeholder="you@example.com" autocomplete="email" required>
+      <button type="submit">Notify me</button>
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+    </form>
+    <p class="subscribe-note">Your address is only used for new-guide announcements. Unsubscribe any time.</p>
+    <p class="subscribe-status" role="status"></p>
+  </div>
+</section>
+    </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <p class="brand-name">Mahjong Rules</p>
+      <p class="footer-note">An independent reference for mahjong rules and strategy. Mahjong is a traditional public-domain game; this site is not affiliated with any publisher or platform.</p>
+    </div>
+    <nav class="footer-cols" aria-label="Footer">
+      <div>
+        <p class="footer-head">Learn</p>
+        <a href="/mahjong-rules">Rules</a>
+        <a href="/mahjong-tiles">Tiles</a>
+        <a href="/mahjong-hands">Winning hands</a>
+        <a href="/mahjong-first-game">First game</a>
+      </div>
+      <div>
+        <p class="footer-head">Rules</p>
+        <a href="/mcr-mahjong-rules">MCR</a>
+        <a href="/riichi-mahjong-rules">Riichi</a>
+        <a href="/sichuan-mahjong-rules">Sichuan</a>
+        <a href="/mahjong-rule-comparison">Compare</a>
+      </div>
+      <div>
+        <p class="footer-head">Site</p>
+        <a href="/about">About</a>
+        <a href="/privacy-policy">Privacy</a>
+        <a href="/terms-of-use">Terms</a>
+        <a href="/disclaimer">Disclaimer</a>
+        <a href="/dmca">DMCA</a>
+        <a href="/cookie-notice">Cookies</a>
+      </div>
+    </nav>
+  </div>
+  <div class="wrap footer-base">
+    <p>&copy; 2026 Mahjong Rules &middot; Contact: <a href="mailto:yqin1090@gmail.com">yqin1090@gmail.com</a></p>
+  </div>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>

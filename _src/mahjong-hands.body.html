@@ -1,0 +1,106 @@
+<div class="keybox">
+  <h2 class="keybox-title">At a glance</h2>
+  <dl>
+    <dt>Standard shape</dt><dd>4 sets + 1 pair = 14 tiles</dd>
+    <dt>Set types</dt><dd>Run of three, triplet, or kong (counts as a set)</dd>
+    <dt>Special shapes</dt><dd>Seven pairs, thirteen orphans</dd>
+    <dt>Nine gates</dt><dd>One suit, 1112345678999 plus any tile of that suit</dd>
+    <dt>Taiwanese</dt><dd>5 sets + 1 pair = 17 tiles</dd>
+    <dt>Legal vs complete</dt><dd>A complete shape can still fail the style's minimum</dd>
+  </dl>
+</div>
+
+<div class="ad-slot" aria-hidden="true"></div>
+
+<div class="prose">
+<h2>What counts as a winning hand?</h2>
+<p>A winning hand is <strong>four sets plus one pair</strong>. A set is either a run of three consecutive tiles in one suit, a triplet of three identical tiles, or a kong of four identical tiles. The pair is two identical tiles. That is 14 tiles in total.</p>
+<p>Two shapes are exempt from this structure: seven pairs and thirteen orphans. Everything else, including the biggest hands in the game, still reduces to sets and a pair.</p>
+
+<figure class="page-figure">
+  <img src="images/hand-shapes.svg" alt="Four winning hand shapes drawn side by side: the standard four sets plus a pair, seven pairs, thirteen orphans and nine gates" width="820" height="360" loading="lazy" decoding="async">
+  <figcaption>Four shapes, one rule: every legal hand either fits the 4-sets-plus-pair frame or is one of the named exceptions.</figcaption>
+</figure>
+
+<h2>The standard shape, set by set</h2>
+<p>Four sets plus a pair sounds simple until you have to find the sets inside a messy hand. The practical method is to take out the pair first, then look for the most obvious set, and repeat until nothing is left.</p>
+<ul>
+  <li><strong>Run:</strong> 123, 456, 789 — same suit, consecutive numbers.</li>
+  <li><strong>Triplet:</strong> three identical tiles, such as three red dragons.</li>
+  <li><strong>Kong:</strong> four identical tiles. It counts as one set, which is why a kong needs a replacement tile: without one, the hand would be a tile short.</li>
+  <li><strong>Pair:</strong> exactly two identical tiles — the head of the hand.</li>
+</ul>
+<p>A hand like 123 characters, 456 circles, 789 bamboo, three east winds and a pair of white dragons is complete. So is a hand of four triplets and a pair, which is the all-triplets pattern and scores well in most systems.</p>
+
+<h2>Seven pairs</h2>
+<p>Seven pairs is exactly that: seven different pairs, 14 tiles, no sets at all. It is legal in Chinese Official, riichi and most Chinese regional games, but it is not legal in American mahjong unless it appears on the card.</p>
+<p>The trap is four of a kind. In Chinese Official, four identical tiles count as <strong>two pairs</strong>, not as a kong, and the hand cannot also claim triplet patterns. In riichi, the same four tiles also count as two pairs, but the hand cannot score triplet yaku. Beginners regularly double-count this.</p>
+<p>Seven pairs also tends to be a defensive hand: you hold many unrelated tiles, so you discard less dangerously than a player chasing a flush.</p>
+
+<h2>Thirteen orphans</h2>
+<p>Thirteen orphans uses one of every terminal and honour tile: the 1 and 9 of each suit, plus east, south, west, north, red, green and white. That is 13 tiles. The fourteenth is a duplicate of any one of them, which completes the pair.</p>
+<p>The hand cannot be played open. Any claim destroys it, because every tile must stay in hand. That makes it the purest "all or nothing" hand in the game and, in riichi, the hand most likely to end in a defensive standoff.</p>
+<p>One rule catches people out: in riichi, if you discard any of the thirteen orphan tiles after reaching a thirteen-orphans wait, you become furiten and cannot win on a discard.</p>
+
+<h2>Nine gates</h2>
+<p>Nine gates is a single-suit hand: 1112345678999 of one suit, plus any one more tile of that same suit. The base shape already contains three sets and a pair, and the extra tile completes the fourth set.</p>
+<p>It is worth listing separately because players often mistake it for just any flush. It is not: the exact 1112345678999 core must be present, and every tile must be in the same suit.</p>
+
+<h2>Seven shifted pairs</h2>
+<p>Seven shifted pairs is seven consecutive pairs in one suit, such as 11223344556677. It is a Chinese Official pattern rather than a universal shape, and unlike ordinary seven pairs it cannot be assembled from mixed suits.</p>
+<p>Because it needs fourteen specific tiles from a single suit, it is vanishingly rare in practice. It is included here so that the shape list is complete, not because you should chase it.</p>
+
+<h2>Why some near-misses fail</h2>
+<p>A hand can look complete and still be illegal. Most rejections come down to three problems:</p>
+<ol>
+  <li><strong>Wrong count.</strong> Fourteen tiles that cannot be split into sets and a pair are simply not a win. A common example is four pungs plus two unmatched tiles — no pair anywhere.</li>
+  <li><strong>Missing the minimum.</strong> In Chinese Official a complete hand below 8 fan is a false win. In riichi, a complete hand with no yaku cannot be declared at all.</li>
+  <li><strong>Shape not on the card.</strong> In American mahjong, a structurally perfect hand is illegal unless the yearly card lists that exact pattern.</li>
+</ol>
+<p>This is why experienced players count twice: once for shape, once for value. The <a href="/mahjong-scoring">scoring page</a> covers the second count.</p>
+
+<h2>Checking a hand in four steps</h2>
+<ol>
+  <li><strong>Count tiles.</strong> 14 for a standard hand, 17 in Taiwanese, 13 while waiting.</li>
+  <li><strong>Find the pair.</strong> Remove it first; without a pair nothing else works.</li>
+  <li><strong>Remove sets.</strong> Take out the most constrained set first — usually a triplet or an edge run.</li>
+  <li><strong>Confirm the value.</strong> Check the minimum before declaring, not after.</li>
+</ol>
+<p>Doing this in order takes a few seconds and prevents the most embarrassing mistake at a table: calling a win that the scorer then rejects.</p>
+
+<h2>How the shape changes by style</h2>
+<table>
+  <thead>
+    <tr><th>Style</th><th>Hand</th><th>Shape rule</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>MCR</td><td>13 tiles</td><td>4 sets + 1 pair, plus 8 fan minimum</td></tr>
+    <tr><td>Riichi</td><td>13 tiles</td><td>4 sets + 1 pair, plus at least one yaku</td></tr>
+    <tr><td>Hong Kong</td><td>13 tiles</td><td>4 sets + 1 pair, plus table minimum</td></tr>
+    <tr><td>Sichuan</td><td>13 tiles</td><td>4 sets + 1 pair, must have dropped one suit</td></tr>
+    <tr><td>Taiwanese</td><td>16 tiles</td><td>5 sets + 1 pair</td></tr>
+    <tr><td>American</td><td>13 tiles</td><td>Pattern printed on the yearly card</td></tr>
+  </tbody>
+</table>
+<p>The one genuine structural difference is Taiwanese: an extra set, not an extra pair. Everything else changes what the hand is worth, not how it is built.</p>
+
+<h2>Quick answers</h2>
+<details class="faq-item">
+  <summary>Can four identical tiles count as two pairs in seven pairs?</summary>
+  <p>In Chinese Official and riichi, yes. Four of a kind counts as two pairs, and the hand cannot claim triplet patterns on those tiles.</p>
+</details>
+<details class="faq-item">
+  <summary>Is a kong a set?</summary>
+  <p>Yes, a kong counts as one of your four sets. The fourth tile is replaced from the wall so your hand stays the right size.</p>
+</details>
+<details class="faq-item">
+  <summary>Why did my 14-tile hand get rejected?</summary>
+  <p>Either the tiles could not be split into four sets and a pair, or the hand did not meet the style's minimum. Check the count first, then the value.</p>
+</details>
+<details class="faq-item">
+  <summary>Does thirteen orphans work in every style?</summary>
+  <p>No. It is standard in Chinese Official and riichi, common in regional Chinese games, and absent from American mahjong unless listed on the card.</p>
+</details>
+</div>
+
+<div class="ad-slot" aria-hidden="true"></div>
